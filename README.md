@@ -28,13 +28,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page. -->
 
-
+## :black_square_button: Development Project
 ### Init project
 *install node modules with npm and yarn*
 ```console
 npm install
 ```
-
 ### Run project
 ```console
 npm start
@@ -50,6 +49,10 @@ npm run test
 ```
 ***
 ## :black_square_button: Container Image
+### Image Registry
+
+> ### https://hub.docker.com/r/pramotser/angular-app
+
 ### Build image
 ```console
 docker build -f Dockerfile -t [NAME_IMAGE:TAG] .
@@ -67,3 +70,4 @@ docker run -d -p [HOST_PORT]:[CONTAINER_PORT] --name [NAME_CONTRAINER] [NAME_IMA
 ```console
 docker run -d -p 4200:80 --name angular-app angular-app:v.1
 ```
+
